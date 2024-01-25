@@ -1,3 +1,28 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+name = "boa-home-task-NB"
+client_id = "5a71c9e80122e6f1bbe1e71ecb6cc60c"
+application_url = "https://exciting-wheel-protect-financing.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "read_customers"
+
+[auth]
+redirect_urls = [
+  "https://exciting-wheel-protect-financing.trycloudflare.com/auth/callback",
+  "https://exciting-wheel-protect-financing.trycloudflare.com/auth/shopify/callback",
+  "https://exciting-wheel-protect-financing.trycloudflare.com/api/auth/callback",
+  "https://exciting-wheel-protect-financing.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "home-assignment-33.myshopify.com"
